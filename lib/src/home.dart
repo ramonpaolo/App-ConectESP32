@@ -14,8 +14,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  bool change = false;
-
   TextEditingController _controllerName = TextEditingController();
 
   var _snack = GlobalKey<ScaffoldState>();

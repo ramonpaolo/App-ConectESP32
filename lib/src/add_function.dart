@@ -46,7 +46,7 @@ class _AddFunctionsState extends State<AddFunctions> {
         ],
         "value": ["${_controllerValue1.text}", "${_controllerValue2.text}"]
       });
-      await file.writeAsStringSync(jsonEncode(json));
+      file.writeAsStringSync(jsonEncode(json));
     } catch (e) {
       Map json = {
         "objects": [
@@ -62,7 +62,7 @@ class _AddFunctionsState extends State<AddFunctions> {
         ]
       };
 
-      await file.writeAsStringSync(jsonEncode(json));
+      file.writeAsStringSync(jsonEncode(json));
 
       return;
     }
